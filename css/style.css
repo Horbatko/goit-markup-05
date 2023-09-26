@@ -705,7 +705,6 @@ h3{
 }
 
 .box-email::placeholder{
-    padding: 8px 0px 8px 16px;
     color: var(--WHITE, #FFF);
     font-size: 12px;
     font-weight: 400;
@@ -724,7 +723,6 @@ h3{
     display: flex;
     justify-content: center;
     align-items: center;
-    top: 21px;
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
     font-family: "Roboto", sans-serif;
     font-size: 16px;
@@ -748,46 +746,48 @@ h3{
 
 /*modal-window*/
 .backdrop{
-    opacity:0;
-    visibility: hidden;
-    pointer-events: none;
-    display: flex;
     position: fixed;
-    inset: 0;
+    top: 0; 
+    left: 0;
+    width: 100%;
+    background-color: rgba(46, 47, 66, 0.4);
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    border-radius: 4px; 
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+
+}
+
+.modal-window{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1); 
+    width: 408px; 
+    min-height: 584px; 
+    background: #fcfcfc; 
+    box-shadow:0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.modal-btn{
+    position: absolute;
+    top: 24px;
+    right: 24px; 
+    width: 24px;
+    height: 24px;
+    border-radius: 50%; 
+    display: flex; 
     align-items: center;
-    justify-content: center;
-    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center; 
+    background-color: #e7e9fc;
+    border: 1px solid rgba(0, 0, 0, 0.1); 
+    padding: 0;
+    cursor: pointer;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.is-open{
-    opacity:1;
-    visibility: visible;
-    pointer-events: auto;
-}
+.modal-btn:hover,
+.modal-btn:focus{
+    background-color: #404bbf;
+    border: none; 
 
-.modal-title{
-    margin-bottom: 16px;
-}
-
-.modal-items{
-    width: 360px;
-    height: 40px;
-    flex-shrink: 0;
-    margin-bottom: 8px;
-    display: flex;
-    justify-content: flex-start;
-    border-radius: 4px;
-    border: 1px solid var(--NAVY-BLUE-modal, rgba(46, 47, 66, 0.40));
-}
-
-.modal-items-text{
-    display: flex;
-    justify-content: flex-start;
-    color: var(--LIGHT-SLATE, #8E8F99);
-    font-family: Roboto;
-    font-size: 12px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 14px;
-    letter-spacing: 0.48px;
 }
