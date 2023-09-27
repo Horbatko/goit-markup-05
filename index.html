@@ -426,11 +426,11 @@
                         </label>
 
                         <button class="fotter-button" type="submit">
-                            
+                            <p class="ftr-btn-text">Subscribe</p>
                             <svg class="ftr-btn-svg" width="24" height="24" class="footer-svg">
                                 <use href="./images/symbol-defs.svg#icon-icon-send"></use>
                             </svg>
-                            <p class="ftr-btn-text">Subscribe</p>
+                            
                         </button>
 
                     </form>
@@ -441,7 +441,66 @@
     
     <div class="backdrop is-open">
         <div class="modal-window">
-            <button class="modal-btn" type="button">
+            <div class="modal-container">
+                <button class="modal-btn" type="button">
+                    <svg class="modal-close-icon" width="8" height="8">
+                        <use href="./images/modal-window-items.svg#icon-close-black"></use>
+                    </svg>
+                </button>
+                <p class="modal-text">Leave your contacts and we will call you back</p>
+                <form action=""  class="modal-form">
+                    <div class="modal-form-box1">
+                        <label for="user-name" name="contacts" class="modal-contacs">
+                            Name
+                            <div class="box-label-cotacs">
+                                <svg class="modal-form-items" width="18" height="24">
+                                    <use href="./images/modal-window-items.svg#icon-user"></use>
+                                </svg>
+                                <input class="box1-input" id="user-name" name="user-name" type="text">
+                            </div>
+                        </label>
+
+
+                    </div>
+
+                    <div class="modal-form-box2">
+                        <label for="user-name" name="contacts" class="modal-contacs">
+                            Phone
+                            <div class="box-label-cotacs">
+                                <svg class="modal-form-items" width="18" height="24">
+                                    <use href="./images/modal-window-items.svg#icon-phone"></use>
+                                </svg>
+                                <input class="box1-input" id="user-name" name="user-name" type="tel">
+                            </div>
+                        </label>
+                    </div>
+
+                    <div class="modal-form-box3">
+                        <label for="user-name" name="contacts" class="modal-contacs">
+                            Email
+                            <div class="box-label-cotacs">
+                                <svg class="modal-form-items" width="18" height="24">
+                                    <use href="./images/modal-window-items.svg#icon-email-black"></use>
+                                </svg>
+                                <input class="box1-input" id="user-name" name="user-name" type="email" >
+                            </div>
+                        </label>
+                    </div>
+
+                    <div class="modal-form-box4">
+                        <label for="user-name" name="contacts" class="modal-contacs">
+                            Comment
+                        </label>
+                        <textarea class="box4-texterea"  id="user-comment" name="user-comment" type="tel" placeholder="Text input"></textarea>
+                    </div>
+
+                    <div class="modal-form-box5">
+                        <input visually-hidden class="box5-checkbox" type="checkbox" id="user-privacy" value="true" name="user-privacy" >
+                        <label class="box5-label" for="user-privacy">I accept the terms and conditions of the <span class="box5-span">ghfjd</span></label>
+                    </div>
+
+                </form>
+            </div>
         </div>
     </div>
 
