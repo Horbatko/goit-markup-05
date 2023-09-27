@@ -918,10 +918,11 @@ h3{
 
 }
 .modal-form-boxsix{
-    margin-left: 95px;
+    
 }
     
 .modal-button-boxsix{
+    margin-left: 95px;
     display: block;
     min-width: 169px;
     height: 56px;
