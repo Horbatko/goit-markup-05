@@ -876,8 +876,12 @@ h3{
     color: #8e8f99;
 }
 
-.boxfour-texterae:focus{
-    border-color: #4D5AE5; 
+.boxfour-texterea:focus{
+    border-color:#4D5AE5; 
+}
+
+.modal-form-boxfive{
+    margin-bottom: 24px;
 }
 
 .boxfive-checkbox{
@@ -889,6 +893,10 @@ h3{
     line-height: 1.17; 
     letter-spacing: 0.04em;
     color: #8e8f99;
+}
+
+.boxfive-link{
+    color: #4d5ae5;
 }
 
 .boxfive-span{
@@ -903,8 +911,34 @@ h3{
     fill: transparent; 
     border: none;
     fill: #F4F4FD;
+    
 }
 
 .modal-span-svg{
 
+}
+.modal-form-boxsix{
+    margin-left: 95px;
+}
+    
+.modal-button-boxsix{
+    display: block;
+    min-width: 169px;
+    height: 56px;
+    font-family: "Roboto", sans-serif ;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color:#ffffff;
+    cursor: pointer;
+    background-color: #4D5AE5;
+    border: none; 
+    border-radius: 4px; 
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-form-boxsix:hover,
+.modal-form-boxsix:focus{
+    background-color:#404bbf;
 }
