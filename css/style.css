@@ -908,6 +908,7 @@ h3{
         clip: rect(0 0 0 0);
         overflow: hidden;
 }
+
 .boxfive-label{
     font-size: 12px;
     line-height: 1.17; 
@@ -934,17 +935,10 @@ h3{
     fill: transparent; 
 }
 
-.boxfive-checkbox:checked + .boxfive-label + .boxfive-span{
+.boxfive-checkbox:checked + .boxfive-label .boxfive-span{
     background-color: #404bbf;
-    border: none; 
+    border: none;
     fill:#F4F4FD;
-}
-
-.modal-span-svg{
-
-}
-.modal-form-boxsix{
-    
 }
     
 .modal-button-boxsix{
