@@ -806,6 +806,10 @@ h3{
     margin-bottom: 16px;
 }
 
+.ftr-btn-svg{
+    margin-left: 16px;
+}
+
 .modal-form-box{
     margin-bottom: 8px; 
 }
@@ -854,6 +858,10 @@ h3{
 
 .modal-form-items:focus{
     fill: #4D5AE5;
+}
+
+.modal-form-boxfour{
+    margin-bottom: 16px;
 }
 
 .boxfour-texterea{
